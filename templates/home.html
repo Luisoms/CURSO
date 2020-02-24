@@ -3,7 +3,7 @@
 {% block content %}
 
 <!-- Carousel-->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide m-5" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -30,20 +30,31 @@
   </a>
 </div>
 
-<!-- jumbotron -->
+<!-- jumbotron-->
 <div class="jumbotron" style="background:white;">
-  <h1 class="display-4" style="color: rgb(29, 129, 196);">English Course</h1>
+  <h1 class="display-4" style="color: #4286f4;">English Course with Luis</h1>
   <p class="lead">Welcome </p>
   <hr class="my-4">
-  <p>Este curso estará comprendido por diez niveles basico-avanzado.
-    En menos de un año hablaras y entenderas Inglés...</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Saber más</a>
+  <div class="spinner-grow text-danger float-left" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <span class="p-2"><strong>Pagina en desarrollo.</strong> Solo hay acceso a el contenido
+    de las clases.
+  </span>
+  <!--Buttom-->
+  <a class="btn btn-primary btn-sm d-inline-flex justify-content-center" style="background:#4286f4;"
+    href="#" role="button">Saber más</a>
 </div>
 
 <div class="jumbotron" style="background:white;">
-  <h1 class="display-4">Classes</h1>
-  <p class="lead"><a href="/classes">Clase Nº1. SLANG (Jergas)</a> - 07/02/2020 </p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Saber más</a>
+  <h1 class="display-5">Classes</h1>
+  <hr class="my-4">
+
+  <!--Classes-->
+  <div>
+    {% include 'classes.html' %}
+  </div>
+
 </div>
 
 {% endblock %}
