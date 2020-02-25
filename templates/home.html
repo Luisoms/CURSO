@@ -1,31 +1,32 @@
 {% extends "layout.html" %}
 
-{% block content %}
+{% block chome %}
 
 <!-- jumbotron-->
-<div class="jumbotron m-5" style="background:white;">
+<div class="jumbotron m-5 p-4" style="background:white;">
   <h1 class="display-4" style="color: #4286f4;">English Course with Luis</h1>
   <p class="lead">Welcome</p>
   <hr class="my-4">
   <div class="spinner-grow spinner-grow-sm text-danger float-left" style="margin-top: 5px;" role="status">
     <span class="sr-only">Loading...</span>
   </div>
-  <span class="p-2"><strong>Pagina en desarrollo.</strong> Solo hay acceso a el contenido
+  <span class="p-2"><strong>Pagina en desarrollo.</strong> Solo hay acceso al contenido
     de las clases.
   </span><br>
   <!--Buttom-->
-  <a class="btn btn-primary d-inline-flex justify-content-center" style="background:#4286f4; margin-top: 5%; margin-left: 40%;"
+  <a class="btn btn-primary d-inline-flex justify-content-center" style="background:#4286f4; margin-top: 5%; margin-left: 45%;"
     href="#" role="button">Saber más</a>
 </div>
 
 <!--Classes-->
-<div class="jumbotron m-5" style="background:white;">
-  <h1 class="display-5">Classes</h1>
+<div class="jumbotron m-5 p-4" style="background:white;">
+  <h1 class="display-5">Content</h1>
   <hr class="my-4">
   <div>
-    {% include 'classes.html' %}
+    {% include 'content.html' %}
   </div>
-
 </div>
+<a class="btn btn-primary d-inline-flex justify-content-center" style="background:#4286f4; margin-top: 5%; margin-left: 45%;"
+    href="/classes" role="button">Saber más</a>
 
 {% endblock %}
