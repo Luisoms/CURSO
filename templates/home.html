@@ -2,31 +2,46 @@
 
 {% block chome %}
 
-<!-- jumbotron-->
-<div class="jumbotron m-5 p-4" style="background:white;">
-  <h1 class="display-4" style="color: #4286f4;">English Course with Luis</h1>
-  <p class="lead">Welcome</p>
-  <hr class="my-4">
-  <div class="spinner-grow spinner-grow-sm text-danger float-left" style="margin-top: 5px;" role="status">
+<!--HOME-->
+<div id="home" class="jumbotron">
+
+  <!--title-->
+  <div id="hometi">
+    <h1 class="display-4" style="color: #2593C8;">English Course with Luis</h1>
+    <p class="lead">Welcome</p>
+    <hr class="my-2" style="background: #2593C8;">
+  </div>
+
+  <!--home content-->
+  <div id="homesp" class="spinner-grow spinner-grow-sm text-danger" role="status">
     <span class="sr-only">Loading...</span>
   </div>
-  <span class="p-2"><strong>Pagina en desarrollo.</strong> Solo hay acceso al contenido
+  <span id="homeco"><strong>Pagina en desarrollo.</strong> Solo hay acceso al contenido
     de las clases.
-  </span><br>
-  <!--Buttom-->
-  <a class="btn btn-primary d-inline-flex justify-content-center" style="background:#4286f4; margin-top: 5%; margin-left: 45%;"
-    href="#" role="button">Saber más</a>
+  </span>
+  
+  <!--button-->
+  <a id="homebu" class="btn btn-primary" style="background:#2593C8;"
+    href="/#" role="button">Saber más</a>
+
 </div>
 
-<!--Classes-->
-<div class="jumbotron m-5 p-4" style="background:white;">
-  <h1 class="display-5">Content</h1>
-  <hr class="my-4">
-  <div>
-    {% include 'content.html' %}
+<!--CONTENT-->
+<div id="cont" class="jumbotron">
+
+  <!--title-->
+  <div id="contti">
+    <h1 class="display-5">Content</h1>
+    <hr class="my-2" style="background: #2593C8;">
   </div>
+
+  <!--home content-->
+  {% include 'content.html' %}
+  
+  <!--button-->
+  <a id="contbu" class="btn btn-primary" style="background:#2593C8;"
+    href="/#" role="button">Saber más</a>
+
 </div>
-<a class="btn btn-primary d-inline-flex justify-content-center" style="background:#4286f4; margin-top: 5%; margin-left: 45%;"
-    href="/classes" role="button">Saber más</a>
 
 {% endblock %}

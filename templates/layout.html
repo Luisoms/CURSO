@@ -17,16 +17,22 @@
 
 </head>
 
-<body style="font-family: Arial;">
+<body id="body">
 
-    <!--Navbar-->
+    <!--NAVBAR-->
 
-    <nav class="navbar navbar-expand-dk navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='images/logo.png') }}" width="100"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    <nav id="nav" class="navbar navbar-expand-dk navbar-dark bg-dark fixed-top">
+        
+        <!--Logo-->
+        <a class="navbar-brand" href="/"><img id="logo" src="{{ url_for('static', filename='images/logo.png') }}" width="125"></a>
+        
+        <!--button-->
+         <button id="butt" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!--list-->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto" style="align-items: center;">
                 <li class="nav-item active">
@@ -40,15 +46,14 @@
                 </li>
             </ul>
         </div>
+
     </nav>
 
 
-    <!-- CONTENIDO -->
+    <!-- CONTENT PAGE -->
 
-    <div class="conteiner p-4 m-4">
         {% block chome %}
         {% endblock %}
-    </div>
 
     <!-- SCRIPTS BOOTSTRAP 4 -->
 

@@ -1,42 +1,56 @@
 {% block content %}
 
-<div class="card-columns p-3">
-  <div class="card">
-    <a target="_blank" href="https://drive.google.com/open?id=1L3AMPhNtGG2_sTyUSHdV2kcmY5VVSZq_"><img src="{{ url_for('static', filename='images/slang.jpg') }}" class="card-img-top" alt="slang"></a>
-    <div class="card-body">
-      <a target="_blank" href="https://drive.google.com/open?id=1L3AMPhNtGG2_sTyUSHdV2kcmY5VVSZq_"><h5 class="card-title">Slang</h5></a>
-      <p class="card-text">Esta es una lista de 25 jergas coloquiales de los Americanos.</p>
+<div id="contco">
+
+  <div id="c1" class="card-column">
+    <div class="card">
+      <a target="_blank" href="https://drive.google.com/open?id=1L3AMPhNtGG2_sTyUSHdV2kcmY5VVSZq_"><img
+          src="{{ url_for('static', filename='images/slang.jpg') }}" class="card-img-top" alt="slang"></a>
+      <div class="card-body">
+        <a target="_blank" href="https://drive.google.com/open?id=1L3AMPhNtGG2_sTyUSHdV2kcmY5VVSZq_">
+          <h5 class="card-title">Slang</h5>
+        </a>
+        <p class="card-text">Esta es una lista de 25 jergas coloquiales de los Americanos.</p>
+      </div>
     </div>
   </div>
 
-  <div class="card bg-dark text-white text-center p-3">
+  <div id="c2" class="card bg-dark text-white text-center">
     <blockquote class="blockquote mb-0">
-      <strong>Horario</strong><hr>
+      <strong>Horario</strong>
+      <hr>
       <p>Viernes<br>2:00pm a 5:00pm</p>
     </blockquote>
   </div><br>
+ 
+    <div id="c3" class="card">
+      <blockquote class="blockquote mb-0 card-body">
+        <p style="text-align:center;">Contacto:<br>0412-6987467</p><hr>
+        <footer class="blockquote-footer" style="text-align:center;">
+          <small class="text-muted">
+            luis.omar.molina.sucre@gmail.com
+          </small>
+        </footer>
+      </blockquote>
+    </div>
 
-  <div class="card p-3">
-    <blockquote class="blockquote mb-0 card-body">
-      <p style="text-align:center;">Contacto:<br>0412-6987467</p><hr>
-      <footer class="blockquote-footer" style="text-align:center;">
-        <small class="text-muted">
-          luis.omar.molina.sucre@gmail.com
-        </small>
-      </footer>
-    </blockquote>
-  </div>
-
-  <div class="card-column p-2 text-left">
-  <div class="card">
-    <a target="_blank" href="https://drive.google.com/open?id=1faoS7w0TCF6Da3aKAGDI53nPF7Lhxg6N"><img src="{{ url_for('static', filename='images/dp1.jpg') }}" class="card-img-top" alt="slang"></a>
-    <div class="card-body">
-      <a target="_blank" href="https://drive.google.com/open?id=1faoS7w0TCF6Da3aKAGDI53nPF7Lhxg6N"><h5 class="card-title">Unidad 1 - 6</h5></a>
-      <p class="card-text">Primera clase. Diapositivas de la unidad uno a la seis.</p>
+  <div id="c4" class="card-column text-left">
+    <div class="card">
+      <a target="_blank" href="https://drive.google.com/open?id=1faoS7w0TCF6Da3aKAGDI53nPF7Lhxg6N"><img
+          src="{{ url_for('static', filename='images/dp1.jpg') }}" class="card-img-top" alt="slang"></a>
+      <div class="card-body">
+        <a target="_blank" href="https://drive.google.com/open?id=1faoS7w0TCF6Da3aKAGDI53nPF7Lhxg6N">
+        <h5 class="card-title">Unidad 1 - 6</h5></a>
+        <p class="card-text">Primera clase. Diapositivas de la unidad uno a la seis.</p>
+      </div>
     </div>
   </div>
 
-  <!-- Carousel
+</div>
+
+{% endblock %}
+
+    <!-- Carousel
   <div id="carouselExampleIndicators" class="carousel slide m-5 float-right" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -64,7 +78,7 @@
     </a>
   </div>-->
 
-<!--Aun no implementados
+    <!--Aun no implementados
   <div class="card p-3">
     <blockquote class="blockquote mb-0 card-body">
       <p>texto.</p>
@@ -127,5 +141,3 @@
   </div>
 </div>
 -->
-
-{% endblock %}
